@@ -1,0 +1,9 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        margin-left: 20px;
+    }
+}

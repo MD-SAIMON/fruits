@@ -5,10 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-- favicons -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- lato fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- daisy ui css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- header start -->
+    <header class="header">
+        <!-- navbar -->
+        <nav class="container mx-auto mt-12 rounded-full bg-[#F85559] relative">
+            <div class="flex justify-between items-center py-3">
+                <div id="navigation"
+                    class="menu md:ml-2 ml-[20px] absolute md:static w-[90%] md:w-auto top-16 bg-[#f85558c2] md:bg-transparent hidden md:block">
+                    <ul class="menu-items flex flex-col md:flex-row items-center text-lg font-medium text-white">
+                        <li><a class="hover:bg-transparent duration-500" href="">Home</a></li>
+                        <li><a class="hover:bg-transparent duration-500" href="">About Us</a></li>
+                        <li><a class="hover:bg-transparent duration-500" href="">Shop</a></li>
+                        <li><a class="hover:bg-transparent duration-500" href="">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <a href="index.html"
+                        class="flex items-center lg:text-4xl md:text-xl text-4xl font-bold text-white"><img
+                            class="inline-block ml-8 md:ml-0 mr-3 w-10 md:w-7 lg:w-auto" src="./images/logo.png"
+                            alt="logo">Fruit
+                        Burst</a>
+                </div>
+                <div class="search-bar relative hidden md:flex items-center mr-4">
+                    <div class="relative">
+                        <input type="search" name="" placeholder="Search here"
+                            class="input input-bordered rounded-full placeholder:pl-2 w-[180px] lg:w-full">
+                        <i class="fa fa-search text-gray-300 absolute right-4 top-4 cursor-pointer"></i>
+                    </div>
 
+                </div>
+                <div class="mr-10 md:hidden duration-300" id="toggleMenu" data-target="#navigation">
+                    <i class="fa fa-bars text-4xl cursor-pointer" aria-hidden="true"></i>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- header end -->
+    <script>
+        // menu in small device
+        let btn = document.querySelector("#toggleMenu");
+        let nav = document.querySelector("#navigation");
+        let icon = btn.querySelector(".fa-bars");
+
+        btn.onclick = function () {
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+                nav.classList.remove('hidden');
+
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+                nav.classList.add('hidden');
+            }
+        }
+    </script>
 </body>
 
 </html>
