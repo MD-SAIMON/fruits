@@ -26,12 +26,13 @@
     <!-- header start -->
     <header class="header">
         <!-- navbar -->
-        <nav class="container mx-auto mt-12 rounded-full bg-[#F85559] relative">
+        <nav class="container mx-auto mt-12 rounded-full md:bg-[#F85559] relative">
             <div class="flex justify-between items-center py-3">
                 <div id="navigation"
-                    class="menu md:ml-2 ml-[20px] absolute md:static w-[90%] md:w-auto top-16 bg-[#f85558c2] md:bg-transparent hidden md:block">
-                    <ul class="menu-items flex flex-col md:flex-row items-center text-lg font-medium text-white">
-                        <li><a class="hover:bg-transparent duration-500" href="">Home</a></li>
+                    class="menu md:ml-2 absolute md:static w-[100%] md:w-auto top-16 bg-[#ffffff] md:bg-transparent hidden md:block z-20">
+                    <ul
+                        class="menu-items flex flex-col md:flex-row items-center text-lg font-bold md:font-medium text-black md:text-white">
+                        <li><a class="hover:bg-transparent duration-500 md:hover:text-[#F85559]" href="">Home</a></li>
                         <li><a class="hover:bg-transparent duration-500" href="">About Us</a></li>
                         <li><a class="hover:bg-transparent duration-500" href="">Shop</a></li>
                         <li><a class="hover:bg-transparent duration-500" href="">All Fruits</a></li>
@@ -39,7 +40,7 @@
                 </div>
                 <div class="logo">
                     <a href="index.html"
-                        class="flex items-center lg:text-4xl md:text-xl text-4xl font-bold text-white"><img
+                        class="flex items-center lg:text-4xl md:text-xl text-4xl font-bold text-black md:text-white"><img
                             class="inline-block ml-8 md:ml-0 mr-3 w-10 md:w-7 lg:w-auto" src="./images/logo.png"
                             alt="logo">Fruit
                         Burst</a>
@@ -59,7 +60,7 @@
         </nav><!-- navbar end -->
 
         <!-- carousel start -->
-        <section class="carousel-section">
+        <section class="carousel-section z-10">
             <div class="container mx-auto">
                 <div class="carousel w-full h-[calc(100vh-162px)] mt-6">
                     <div id="slide1" class="carousel-item relative w-full">
@@ -71,7 +72,7 @@
                                     <h1 class="mb-5 text-5xl text-white font-bold">Exotic tastes at your doorstep</h1>
                                     <p class="mb-5 font-medium text-xl">We supply highly quality organic products</p>
                                     <button
-                                        class="btn bg-[#F85559] hover:text-[#f85559] hover:bg-white border-0 text-white">Shop
+                                        class="btn bg-[#F85559] capitalize hover:text-[#f85559] hover:bg-white border-0 text-white">Shop
                                         Now</button>
                                 </div>
                             </div>
@@ -79,7 +80,7 @@
                         <!-- carousel item 1 end -->
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide4"
-                                class="btn bg-[#121212] border-0 text-white hover:bg-[#F85559] hover:bg-[#F85559] btn-circle">❮</a>
+                                class="btn bg-[#121212] border-0 text-white hover:bg-[#F85559] btn-circle">❮</a>
                             <a href="#slide2"
                                 class="btn bg-[#121212] border-0 text-white hover:bg-[#F85559] btn-circle">❯</a>
                         </div>
@@ -93,7 +94,7 @@
                                     <h1 class="mb-5 text-5xl text-white font-bold">Exotic tastes at your doorstep</h1>
                                     <p class="mb-5 font-medium text-xl">We supply highly quality organic products</p>
                                     <button
-                                        class="btn bg-[#F85559] hover:text-[#f85559] hover:bg-white border-0 text-white">Shop
+                                        class="btn bg-[#F85559] capitalize hover:text-[#f85559] hover:bg-white border-0 text-white">Shop
                                         Now</button>
                                 </div>
                             </div>
@@ -115,7 +116,7 @@
                                     <h1 class="mb-5 text-5xl text-white font-bold">Exotic tastes at your doorstep</h1>
                                     <p class="mb-5 font-medium text-xl">We supply highly quality organic products</p>
                                     <button
-                                        class="btn bg-[#F85559] hover:text-[#f85559] hover:bg-white border-0 text-white">Shop
+                                        class="btn bg-[#F85559] capitalize hover:text-[#f85559] hover:bg-white border-0 text-white">Shop
                                         Now</button>
                                 </div>
                             </div>
@@ -137,7 +138,7 @@
                                     <h1 class="mb-5 text-5xl text-white font-bold">Exotic tastes at your doorstep</h1>
                                     <p class="mb-5 font-medium text-xl">We supply highly quality organic products</p>
                                     <button
-                                        class="btn bg-[#F85559] hover:text-[#f85559] hover:bg-white border-0 text-white">Shop
+                                        class="btn bg-[#F85559] capitalize hover:text-[#f85559] hover:bg-white border-0 text-white">Shop
                                         Now</button>
                                 </div>
                             </div>
@@ -154,6 +155,35 @@
             </div>
         </section>
         <!-- carousel end -->
+
+        <!-- fruit list start -->
+        <section class="fruit-list">
+            <div class="max-w-4xl mx-auto bg-white mt-[-100px] relative p-10 rounded-md">
+                <div class="fruits flex justify-between text-center">
+                    <div class="fruit1">
+                        <img src="./images/fruit1.png" alt="Grapes">
+                        <h4>Grapes</h4>
+                    </div>
+                    <div class="fruit2">
+                        <img src="./images/fruit2.png" alt="Orange">
+                        <h4>Orange</h4>
+                    </div>
+                    <div class="fruit3">
+                        <img src="./images/fruit3.png" alt="Mango">
+                        <h4>Mango</h4>
+                    </div>
+                    <div class="fruit4">
+                        <img src="./images/fruit4.png" alt="Strawberry">
+                        <h4>Strawberry</h4>
+                    </div>
+                    <div class="fruit5">
+                        <img src="./images/fruit5.png" alt="Pomegranates">
+                        <h4>Pomegranates</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fruit list end -->
     </header>
     <!-- header end -->
     <script>
