@@ -19,10 +19,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 
-<body>
+<body class="overflow-x-hidden font-['Lato']">
     <!-- header start -->
     <header class="header">
         <!-- navbar -->
@@ -67,7 +71,7 @@
                         <!-- carousel item 1 start-->
                         <div class="hero h-full bg-[url('./images/banner1.png')]">
                             <div class="hero-overlay bg-opacity-60"></div>
-                            <div class="hero-content text-center text-neutral-content py-10 md:py-20">
+                            <div class="hero-content text-center text-neutral-content">
                                 <div class="max-w-md text-white">
                                     <h1 class="mb-5 text-4xl md:text-5xl text-white font-bold">Exotic tastes at your
                                         doorstep</h1>
@@ -190,7 +194,7 @@
 
     <main>
         <!-- deals of the day start -->
-        <section class="deal-of-the-day pt-12">
+        <section class="deal-of-the-day pt-8">
             <div class="container mx-auto">
                 <div class="deals-top-section flex flex-col md:flex-row items-center px-10 md:px-0">
                     <div class="deals-content-left flex-1 text-center md:text-left py-8 md:pr-10 px-10 lg:px-0">
@@ -640,7 +644,7 @@
                                 <div class="order-2 md:order-1">
                                     <h3 class="text-[#121212] font-bold text-[20px] lg:text-2xl">Integrated Supplier
                                     </h3>
-                                    <div class="divider ml-[calc(50%-48px)] md:ml-[50%] lg:ml-auto my-0 w-24"></div>
+                                    <div class="divider ml-[calc(50%-48px)] md:ml-auto my-0 w-24"></div>
                                     <p class="font-medium text-[14px] md:text-base text-[#121212] opacity-60">
                                         Professional employees
                                         are there for you to pick
@@ -657,7 +661,7 @@
                                 <div class="order-2 md:order-1">
                                     <h3 class="text-[#121212] font-bold text-[20px] lg:text-2xl">Sustainable Practice
                                     </h3>
-                                    <div class="divider ml-[calc(50%-48px)] md:ml-[50%] lg:ml-auto my-0 w-24"></div>
+                                    <div class="divider ml-[calc(50%-48px)] md:ml-auto my-0 w-24"></div>
                                     <p class="font-medium text-[14px] md:text-base text-[#121212] opacity-60">
                                         Professional employees
                                         are there for you to pick
@@ -673,7 +677,7 @@
                                 class="single-item flex flex-col md:flex-row text-center md:text-end justify-center items-center gap-5">
                                 <div class="order-2 md:order-1">
                                     <h3 class="text-[#121212] font-bold text-[20px] lg:text-2xl">The Benefits Only</h3>
-                                    <div class="divider ml-[calc(50%-48px)] md:ml-[50%] lg:ml-auto my-0 w-24"></div>
+                                    <div class="divider ml-[calc(50%-48px)] md:ml-auto my-0 w-24"></div>
                                     <p class="font-medium text-[14px] md:text-base text-[#121212] opacity-60">
                                         Professional employees
                                         are there for you to pick
